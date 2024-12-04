@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "gamini:build:production"
+              "buildTarget": "gamini:build:production"
             },
             "development": {
-              "browserTarget": "gamini:build:development"
+              "buildTarget": "gamini:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gamini:build"
+            "buildTarget": "gamini:build"
           }
         },
         "test": {
