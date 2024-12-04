@@ -7,9 +7,10 @@ interface Message {
 }
 
 @Component({
-  selector: 'app-gamini-prompter',
-  templateUrl: './gamini-prompter.component.html',
-  styleUrls: ['./gamini-prompter.component.scss']
+    selector: 'app-gamini-prompter',
+    templateUrl: './gamini-prompter.component.html',
+    styleUrls: ['./gamini-prompter.component.scss'],
+    standalone: false
 })
 export class GaminiPrompterComponent implements OnInit{
 
