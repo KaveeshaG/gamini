@@ -41,10 +41,9 @@
 
     <mat-card-actions>
       <div class="mic-button-container" [class.listening]="isListening">
-        <button mat-fab color="primary" class="mic-button" [class.pulse]="showRipple" [disabled]="isProcessing">
-          <!-- TODO: put below code inside the button -->
-          <!-- (mousedown)="onTouchStart($event)" (mouseup)="onTouchEnd($event)" (mouseleave)="onTouchEnd($event)"
-          (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)" -->
+        <button mat-fab color="primary" class="mic-button" [class.pulse]="showRipple" [disabled]="isProcessing"
+          (mousedown)="onTouchStart($event)" (mouseup)="onTouchEnd($event)" (mouseleave)="onTouchEnd($event)"
+          (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
           <mat-icon>{{ isListening ? 'mic' : 'mic_none' }}</mat-icon>
         </button>
         <div class="ripple" [class.show]="showRipple"></div>
